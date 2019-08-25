@@ -1,7 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h3>Filter by Server Status:</h3>
+    <div class="col-sm-12">     
+        <h3 class="card-title">Assignment requirements:</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Create a pipe that reverses the server size text, small, medium & large</li>
+          <li class="list-group-item">Create a pipe that sorts the server names alphabetically</li>
+        </ul>     
+      <h3 class="mt-4">Filter by Server Status:</h3>
       <input type="text" class="mb-3" [(ngModel)]="filteredStatus">
       <br>
       <button class="btn btn-primary mt-2" (click)="onAddServer()">Add Server</button>
