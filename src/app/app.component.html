@@ -8,7 +8,10 @@
       <br><br>
       <h2>App Status: {{ appStatus | async }}</h2>
       <hr>
-      <div class="list-group-item d-flex bd-highlight" *ngFor="let server of servers | filter:filteredStatus:'status' "
+      <div class="list-group-item d-flex bd-highlight" 
+      *ngFor="let server of servers | 
+      filter:filteredStatus:'status' |
+      sort: 'name'"
         [ngClass]="getStatusClasses(server)">
         <div class="p-2 w-100 bd-highlight">
           <strong>{{ server.name }}</strong> |
